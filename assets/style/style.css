@@ -25,7 +25,6 @@ body {
 /* Cabeçalho ============= */
 header {
   width: 100%;
-  height: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,9 +35,15 @@ header {
     rgba(27, 27, 27, 1) 53%
   );
 }
+.header-center {
+  width: 90%;
+  max-width: 1040px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header-white {
-  width: 386px;
-  margin-left: -160px;
   height: inherit;
   display: flex;
   justify-content: right;
@@ -148,7 +153,6 @@ button {
 /* Nagegação ===============*/
 nav {
   width: 100%;
-  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +161,15 @@ nav {
     rgba(27, 27, 27, 1) 50%,
     rgba(255, 255, 255, 1) 50%
   );
-  overflow: hidden;
+}
+.nav-center {
+  width: 90%;
+  max-width: 1040px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 .nav-left {
   height: 55px;
@@ -234,6 +246,7 @@ nav {
 
 .carrinho {
   width: 70px;
+  padding: 20px;
   margin-left: -25px;
   height: inherit;
   background: linear-gradient(rgb(255, 116, 116), red);
@@ -258,34 +271,55 @@ nav {
 }
 
 /* Home ==================== */
+main {
+  margin: auto;
+}
+
 .banner-home {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('/assets/banners/banner-principal-desk.jpg');
+  background-image: url("../banners/banner-principal-desk.jpg");
   width: 100%;
-  height: 300px;
+  height: 299px;
+  overflow: hidden;
 }
 .imgs {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+
 }
-.imgs img {
-  width: 320px;
-  z-index: 1;
+.img-left {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.imgs img:nth-child(2) {
-  transform: scaleX(-1);
+.img-right {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.img-seta {
+  width: 15px;
+  filter: brightness(4);
+  z-index: 8;
+  cursor: pointer;
 }
 
+
 /* Categorias ======================== */
+
 .icones_categorias {
   margin: auto;
   height: 70px;
   max-width: 1040px;
-  width: 80%;
+  width: 90%;
   background-color: #ffffff;
   margin-top: -35px;
   position: relative;
@@ -296,8 +330,10 @@ nav {
   align-items: center;
   overflow: hidden;
   color: #6d6d6d;
+  font-size: 1.1rem;
   font-weight: 500;
   box-shadow: 0 0 8px rgba(126, 126, 126, 0.37);
+  z-index: 9;
 }
 .area-categorias {
   width: 100%;
@@ -313,4 +349,33 @@ nav {
 .area-categorias img {
   width: 25px;
   margin-right: 8px;
+}
+
+/* Banners Destaques ================================ */
+.banner-destaque {
+  margin: auto;
+  width: 90%;
+  max-width: 1040px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  overflow: hidden;
+}
+.imgs-destaques {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.imgs-destaques img {
+  width: 50%;
+  object-fit: cover;
+  padding-right: 10px;
+}
+.imgs-destaques img:last-child {
+  padding-left: 10px;
+  padding-right: 0;
 }
