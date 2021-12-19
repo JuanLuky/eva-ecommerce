@@ -308,7 +308,7 @@ main {
  
 .img-seta {
   width: 15px;
-  filter: brightness(4);
+  filter: brightness(5);
   z-index: 8;
   cursor: pointer;
 }
