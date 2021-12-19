@@ -270,61 +270,74 @@ nav {
   margin-top: -18px;
 }
 
-/* Home ==================== */
-main {
-  margin: auto;
-}
+/* Home Slider ==================== */
 
-.banner-home {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../banners/banner-principal-desk.jpg");
-  width: 100%;
+.banner-slider {
+  display: flex;
+  flex-direction: column;
+  background-color: #b30909 ;
   height: 255px;
+}
+.slider {
+  height: 255px;
+  flex: 1;
   overflow: hidden;
 }
-.imgs {
-  margin-top: 15px;
-  width: 100%;
+.slider-width {
+  height: 100%;
+  display: flex;
+  transition: all ease 1s;
+}
+.slider-item {
+  width: 100vw;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-area img{
+  margin-top: 20px;
+  width: 238px;
+}
+
+/* botões slider */
+.slider-controles {
+  position: absolute;
+  z-index: 20;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
-
 }
-.img-left {
-  width: 240px;
-  display: flex;
-  justify-content: center;
+.slider-area {
+  height: 100%;
   align-items: center;
-}
-.img-right {
-  width: 240px;
+  justify-content: space-between;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
- 
-.img-seta {
+.slider-area .img-seta {
   width: 15px;
-  filter: brightness(5);
+  filter: brightness(8);
   z-index: 8;
   cursor: pointer;
+  overflow: hidden;
+}
+.margin-scroll {
+  margin-right: 15px;
 }
 
 
 /* Categorias ======================== */
 
 .icones_categorias {
-  margin: auto;
+  margin:0 auto;
   height: 60px;
-  max-width: 1040px;
-  width: 90%;
+  max-width: 1020px;
+  width: 80%;
   background-color: #ffffff;
   margin-top: -30px;
   position: relative;
-  z-index: 2;
+  z-index: 60;
 
   display: flex;
   justify-content: space-evenly;
@@ -334,7 +347,6 @@ main {
   font-size: 1.1rem;
   font-weight: 500;
   box-shadow: 0 0 8px rgba(126, 126, 126, 0.37);
-  z-index: 9;
 }
 .area-categorias {
   width: 100%;
@@ -355,7 +367,7 @@ main {
 /* Banners Destaques ================================ */
 .banner-destaque {
   margin: auto;
-  width: 90%;
+  width: 80%;
   max-width: 1040px;
 
   display: flex;

@@ -1,4 +1,4 @@
-// Menu de Navegação
+// Menu de Navegação =================================
 const element = document.querySelectorAll(".nav-infos-itens li")
 const img = document.querySelectorAll(".nav-infos-itens li img")
 const todosDepartamento = document.querySelector(".nav-link")
@@ -100,3 +100,38 @@ function removeClass() {
     element[5].classList.remove("active");
 }
 
+// Slider Banner =======================================
+
+const totalSlides = document.querySelectorAll(".slider-item").length;
+let currentSlide = 0;
+
+document.querySelector(".slider-width").style.width =
+    `calc(100vw * ${totalSlides})`;
+
+document.querySelector(".slider-controles").style.height =
+    `${document.querySelector('.slider').clientHeight}px`;
+
+function goPrev() {
+    currentSlide--;
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+    updateMargin();
+}
+function goNext() {
+    currentSlide++;
+    if (currentSlide > (totalSlides - 1)) {
+        currentSlide = 0;
+    }
+    updateMargin();
+}
+
+function updateMargin() {
+    let sliderWidthItem = document.querySelector('.slider-item').clientWidth;
+    
+    let newMargin = (currentSlide * sliderWidthItem);
+
+    document.querySelector(".slider-width").style.marginLeft =
+    `-${newMargin}px`;
+}
+setInterval(goNext, 5000);

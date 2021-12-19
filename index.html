@@ -102,16 +102,26 @@
     </nav>
 
     <main>
-        <section class="banner-home">
-            <div class="imgs">
-                <div class="img-left">
-                    <img src="assets/triangulo-esq-banner.svg" alt="img">
-                    <img class="img-seta" src="assets/icones_home/seta-esq.svg" alt="img">
+        <section class="banner-slider">
+            <div class="slider">
+                <div class="slider-controles">
+                    <div class="slider-area">
+                        <img src="assets/triangulo-esq-banner.svg" alt="">
+                        <img onclick="goPrev()" class="img-seta" src="assets/icones_home/seta-esq.svg" alt="img">
+                    </div>
+                    <div class="slider-area">
+                        <img onclick="goNext()" class="img-seta" src="assets/icones_home/seta-dir.svg" alt="img">
+                        <img class="margin-scroll" src="assets/triangulo-dir-banner.svg" alt="">
+                    </div>
                 </div>
-                <div class="img-right">
-                    <img class="img-seta" src="assets/icones_home/seta-dir.svg" alt="img">
-                    <img src="assets/triangulo-dir-banner.svg" alt="img">
+
+                <div class="slider-width" style="width: calc(100vw * 3)">
+                    <div class="slider-item" style="background-image: url(assets/banners/banner-principal-desk.jpg);">
+                    </div>
+                    <div class="slider-item" style="background-image: url(assets/banners/banner-principal-desk.jpg);">
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -132,6 +142,13 @@
             <div class="area-categorias">
                 <img style="width: 20px;" src="assets/icones_home/icones_forca_de_venda/troca.svg" alt="img-entrega">
                 <p>Primeira troca grátis.</p>
+            </div>
+        </section>
+
+        <section class="banner-destaque">
+            <div class="imgs-destaques">
+                <img src="assets/banners/mini-banner-esq.jpg" alt="imagens-destaques">
+                <img src="assets/banners/mini-banner-dir.jpg" alt="imagens-destaques">
             </div>
         </section>
 
