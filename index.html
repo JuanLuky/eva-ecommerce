@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/style/style.css">
+    <!-- JQuery -->
+    <link type="text/css" rel="stylesheet" href="assets/style/lightslider.css" />
+    <script type="text/javascript" src="src/Jquery.js"></script>
+    <script type="text/javascript" src="src/lightslider.js"></script>
+
     <title>Eva E-commerce</title>
 </head>
 
@@ -152,15 +157,224 @@
             </div>
         </section>
 
-        <section class="banner-destaque">
-            <div class="imgs-destaques">
-                <img src="assets/banners/mini-banner-esq.jpg" alt="imagens-destaques">
-                <img src="assets/banners/mini-banner-dir.jpg" alt="imagens-destaques">
+        <div class="text-produtos">
+            <img src="assets/icones_home/enfeite-mais-vendidos-esq.svg" alt="enfeite-mais-vendidos">
+            <h1>Mais Vendidos</h1>
+            <img src="assets/icones_home/enfeite-mais-vendidos-dir.svg" alt="enfeite-mais-vendidos">
+        </div>
+
+        <section class="cont-produtos">
+            <div class="produtos">
+                <ul id="autoWidth">
+                    <li class="item-a">
+                        <div class="box">
+                            <img src="assets/fotos_de_produtos/1000.jpg" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Alto Falante 6 Polegadas 160W RMS Triaxial 4 Ohms Bobina Simples Shutt Par Potência
+                                    320W Máxima
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item-b">
+                        <div class="box">
+                            <img src="assets/fotos_de_produtos/1000.jpg" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Alto Falante 6 Polegadas 160W RMS Triaxial 4 Ohms Bobina Simples Shutt Par Potência
+                                    320W Máxima
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item-c">
+                        <div class="box">
+                            <img src="assets/fotos_de_produtos/1000.jpg" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Alto Falante 6 Polegadas 160W RMS Triaxial 4 Ohms Bobina Simples Shutt Par Potência
+                                    320W Máxima
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item-d">
+                        <div class="box">
+                            <img src="assets/fotos_de_produtos/1000.jpg" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Alto Falante 6 Polegadas 160W RMS Triaxial 4 Ohms Bobina Simples Shutt Par Potência
+                                    320W Máxima
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <div class="contact-text">
+                    <img src="assets/Logo_Newsletter.png" alt="img">
+                    <p>Cadastra-se e receba promoções e ofertas exclusivas!</p>
+                </div>
+                <div class="contact-form">
+                    <input type="text" name="text" id="name" placeholder="Nome">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <button type="submit"> ENVIAR </button>
+                </div>
+
+            </div>
+
+            <div class="text-produtos-frios">
+                <h1>Se vista com estilo</h1>
+            </div>
+            <div class="produtos-frios">
+                <ul id="lightSlider">
+                    <li>
+                        <div class="box">
+                            <img class="moda" src="assets/fotos_de_produtos/moletom.png" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Moletom Preto <br> Feito em algodão
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box">
+                            <img class="moda" src="assets/fotos_de_produtos/moletom.png" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Moletom Preto <br> Feito em algodão
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box">
+                            <img class="moda" src="assets/fotos_de_produtos/moletom.png" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Moletom Preto <br> Feito em algodão
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box">
+                            <img class="moda" src="assets/fotos_de_produtos/moletom.png" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Moletom Preto <br> Feito em algodão
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box">
+                            <img class="moda" src="assets/fotos_de_produtos/moletom.png" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Moletom Preto <br> Feito em algodão
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box">
+                            <img class="moda" src="assets/fotos_de_produtos/moletom.png" class="model" alt="img">
+                            <div class="text-detalhes">
+                                <h3>Moletom Preto <br> Feito em algodão
+                                </h3>
+                                <h2>R$ 78,90</h2>
+                                <p>Em 2x de R$ 39,45 s/juros</p>
+                            </div>
+                            <button class="active-btn">
+                                <img src="assets/icones_home/carrinho-produtos.svg" alt="carrinho produtos">
+                                Comprar
+                            </button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
+
+        <footer>
+
+        </footer>
     </main>
 
     <script src="src/app.js"></script>
+
+    <!-- Slider Cards -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+            });
+        });
+    </script>
+    <!-- Slider Cards -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#lightSlider').lightSlider({
+                autoWidth: true,
+                loop: true,
+            });
+        });
+    </script>
 </body>
 
 </html>

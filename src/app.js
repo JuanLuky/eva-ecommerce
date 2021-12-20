@@ -1,4 +1,4 @@
-// Menu de Navegação =================================
+// Menu de Navegação =================================>
 const element = document.querySelectorAll(".nav-infos-itens li")
 const img = document.querySelectorAll(".nav-infos-itens li img")
 const todosDepartamento = document.querySelector(".nav-link")
@@ -100,8 +100,8 @@ function removeClass() {
     element[5].classList.remove("active");
 }
 
-// Slider Banner =======================================
 
+// Slider Banner =======================================>
 const totalSlides = document.querySelectorAll(".slider-item").length;
 let currentSlide = 0;
 
@@ -135,3 +135,5 @@ function updateMargin() {
     `-${newMargin}px`;
 }
 setInterval(goNext, 5000);
+
+
