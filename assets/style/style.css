@@ -422,6 +422,7 @@ nav {
   padding: 30px 0 0 80px;
   font-size: 1.8rem;
   font-weight: 600;
+  color: #1b1b1b;
   background-color: #f1f1f1;
 }
 .text-produtos img {
@@ -512,7 +513,8 @@ nav {
 /* Contatos */
 .contact {
   margin: 30px 0 20px 0;
-  width: 1040px;
+  width: 90%;
+  max-width: 1040px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -567,7 +569,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .text-produtos-frios {
   width: 90%;
@@ -586,8 +588,116 @@ nav {
 .text-produtos-frios h1 {
   font-weight: 600;
 }
+
 /* footer =============================== */
 footer {
-  height: 400px;
+  padding: 60px 10px 20px 10px;
+  position: relative;
+  height: 520px;
   background-color: #080808;
+}
+footer .seta-top {
+  width: 50px;
+  position: absolute;
+  right: 18%;
+  top: -25px;
+  cursor: pointer;
+}
+.footer-area {
+  margin: auto;
+  max-width: 1040px;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.footer--sobre {
+  width: 180px;
+}
+.footer--sobre h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #f9f9f9;
+}
+.footer--sobre li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+.footer--sobre li a {
+  color: #f9f9f9;
+  font-weight: 300;
+}
+.footer--sobre li a:hover {
+  color: #c5c5c5;
+}
+.redes-socias {
+  display: flex;
+}
+.redes-socias a img {
+  width: 15px;
+  margin-top: -10px;
+  margin-right: 20px;
+}
+.footer-area-metodos {
+  margin: auto;
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  height: 80px;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.212);
+  justify-content: left;
+  align-items: center;
+  text-transform: uppercase;
+  color: #f9f9f9;
+}
+.footer-area-metodos h2 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+.imgsFooter {
+  display: flex;
+}
+.metodos-pagamento {
+  margin-left: 5em;
+  display: flex;
+}
+.metodos-pagamento img {
+  width: 35px;
+  margin: 5px 0 0;
+}
+.meios-envios {
+  display: flex;
+  margin-left: 10em;
+}
+.meios-envios img {
+  width: 50px;
+  margin: 0 5px 0 0;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: #a1a1a1b6;
+}
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-copy img {
+  width: 120px;
+  margin: 20px;
+}
+.eva-copyright {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eva-copyright img {
+  margin: 5px;
+  width: 180px;
 }

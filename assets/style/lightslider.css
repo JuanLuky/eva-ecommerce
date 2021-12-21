@@ -159,12 +159,12 @@
     display: flex;
     top: 40%;
     height: 32px;
-    background-image: url('../banners/controls.png');
-    background-repeat: no-repeat;
+    background-image: url('../banners/controlss.png');
+    background-position: center;
     cursor: pointer;
     position: absolute;
     z-index: 999;
-    opacity: 0.8;
+    opacity: 1;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
 }
@@ -173,11 +173,11 @@
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
-    left: 13px;
+    left: 10px;
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
-    right: 15px;
+    right: 10px;
 }
 .lSAction > a.disabled {
     pointer-events: none;

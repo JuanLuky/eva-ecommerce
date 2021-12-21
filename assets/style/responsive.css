@@ -1,0 +1,156 @@
+@media only screen and (max-width: 1025px) {
+  html {
+    font-size: 46%;
+  }
+  .forgeometrica {
+    display: none;
+  }
+  .inputPesquisa {
+    display: none;
+  }
+  .atendimento,
+  .atendimento p,
+  .atendimento img:last-child {
+    display: none;
+  }
+  header {
+    background: #ffffff;
+  }
+  .header-white {
+    background-color: transparent;
+  }
+  .header-black {
+    background-color: transparent;
+  }
+  .nav-infos-itens {
+    display: none;
+  }
+  nav {
+    background: #ffffff;
+    display: none;
+  }
+  .nav-link p {
+    display: none;
+  }
+  .contHeaderLeft {
+    width: auto;
+  }
+  .logo-header {
+    margin: 0;
+    width: auto;
+  }
+  .slider-item {
+    background-image: url(../banners/banner-principal-mobile.jpg) !important;
+  }
+  .slider-item:last-child {
+    background-image: url(../banners/banner-principal-mobile.jpg) !important;
+  }
+  .slider-area img {
+    display: none;
+  }
+  .banner-slider {
+    height: 190px;
+  }
+  .icones_categorias {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    z-index: 99;
+  }
+  .area-categorias {
+    width: 50%;
+  }
+  .banner-destaque {
+    width: 90%;
+    flex-direction: column;
+  }
+  .imgs-destaques {
+    flex-direction: column;
+  }
+  .imgs-destaques img {
+    max-width: 370px;
+    width: 98%;
+    padding: 0 0 10px 0;
+  }
+  .imgs-destaques img:last-child {
+    padding: 0;
+  }
+  .text-produtos {
+    text-align: left;
+  }
+  .text-produtos h1 {
+    width: 60%;
+  }
+  footer {
+    height: 870px;
+  }
+  .footer-area {
+    flex-direction: column;
+  }
+  footer .seta-top {
+    width: 50px;
+    position: absolute;
+    right: 45%;
+    top: -25px;
+    cursor: pointer;
+  }
+  .contact {
+    order: 3;
+    margin-top: -55px;
+    height: 235px;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .contact-text {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-text img {
+    width: 50px;
+    margin: -30px 0 20px 0;
+  }
+  .contact p {
+    width: 250px;
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .contact-form {
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .contact-form button {
+    margin-bottom: 5px;
+  }
+  .contact-form input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .footer-area-metodos {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 130px;
+  }
+  .metodos-pagamento {
+    margin: 0;
+    flex-direction: column;
+  }
+  .meios-envios {
+    margin: 0;
+    flex-direction: column;
+  }
+  .textfooter {
+    display: flex;
+    flex-direction: column;
+  }
+  .metodos-pagamento img {
+    margin: 10px 5px 10px 0;
+  }
+  .meios-envios img {
+    margin: 10px 5px 0 0;
+  }
+}

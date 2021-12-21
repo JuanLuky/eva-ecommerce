@@ -136,4 +136,11 @@ function updateMargin() {
 }
 setInterval(goNext, 5000);
 
-
+// Efeito SubirProTopo =================================
+function subirtela() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
